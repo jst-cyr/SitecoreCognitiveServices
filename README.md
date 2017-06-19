@@ -18,10 +18,6 @@ In order to prevent sharing API keys and local dev paths (the Unicorn serializat
 - Build the projects (to ensure all the Nuget packages get downloaded because this doesn't always work right away)
 - Publish the core and launch demo projects onto your website
 
-__Go into the webroot and modify the web.config__
-- add a node to the compilation assembles: `<add assembly="System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />`
-- change `Newtonsoft.Json` version from `6.0.0.0` to `9.0.0.0` (the project oxford clients are using the new version)
-
 __Unicorn sync__
 - Browse to `http://<domain>/unicorn.aspx` and sync the configuration
 - Additionally you may want to browse to these files and force refresh them (browsers cache them)
